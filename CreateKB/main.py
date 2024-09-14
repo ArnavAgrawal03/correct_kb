@@ -17,7 +17,7 @@ def get_text(filename):
     return knowledge
 
 
-client = OpenAI(api_key="sk-proj-vU744CvQVK2ffqWQQlbFT3BlbkFJRp54HFS3Lhyb6h0G83Au")
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 
 def logic_of(knowledge: str, atoms: Atoms):
